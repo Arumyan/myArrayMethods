@@ -16,7 +16,6 @@ let array = [1, 2, 3, 4, 5, 6];
 myForEach(array, item => console.log(item));
 myForEach(array, function (item) {console.log(this)}, array);
 
-
 function myFilter(array, callback, context){
 
 	let func = callback;
@@ -37,8 +36,6 @@ function myFilter(array, callback, context){
 
 console.log(myFilter(array, item => item > 4))
 
-
-
 function myMap(array, callback, context){
 
 	let func = callback;
@@ -56,7 +53,6 @@ function myMap(array, callback, context){
 }
 
 console.log(myMap(array, item => item*item))
-
 
 function mySlice(array, startIndex, endIndex){
 
